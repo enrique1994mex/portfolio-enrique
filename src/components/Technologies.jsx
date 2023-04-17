@@ -22,7 +22,7 @@ const Technologies = () => {
 		<Stack
 			direction='row'
 			sx={{
-				height: '300px',
+				minHeight: '300px',
 				margin: '5rem 0px',
 				justifyContent: 'space-around',
 				alignItems: 'center',

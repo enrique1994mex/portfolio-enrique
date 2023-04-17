@@ -13,6 +13,7 @@ const Contact = (props, ref) => {
 				display: 'flex',
 				justifyContent: 'center',
 				alignItems: 'center',
+				flexWrap: 'wrap',
 			}}
 		>
 			<Stack display='flex'>

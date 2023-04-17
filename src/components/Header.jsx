@@ -7,9 +7,7 @@ import {
 	Typography,
 	Menu,
 	Container,
-	Avatar,
 	Link,
-	Tooltip,
 	MenuItem,
 } from '@mui/material'
 import SvgIcon from '@mui/material/SvgIcon'
@@ -40,7 +38,7 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 
 	return (
 		<AppBar
-			position='static'
+			position='sticky'
 			sx={{
 				height: '6rem',
 				justifyContent: 'center',
@@ -129,11 +127,11 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 						))}
 					</Box>
 
-					<Box sx={{ flexGrow: 0 }}>
+					{/* <Box sx={{ flexGrow: 0 }}>
 						<Tooltip title='Open settings'>
 							<Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
 						</Tooltip>
-					</Box>
+					</Box> */}
 				</Toolbar>
 			</Container>
 		</AppBar>
