@@ -24,16 +24,56 @@ const Project = ({ title, description, url, github, image }) => {
 				<Typography gutterBottom variant='h5' component='div'>
 					{title}
 				</Typography>
-				<Typography variant='body2' color='text.secondary'>
+				<Typography variant='h6' align='justify'>
 					{description}
 				</Typography>
 			</CardContent>
-			<CardActions sx={{ backgroundColor: '#F4BA86' }}>
-				<Link href={url} target='_blank' rel='noreferrer'>
+			<CardActions
+				sx={{ backgroundColor: '#F4BA86', gap: '1rem', alignItems: 'center' }}
+			>
+				<Link
+					href={url}
+					target='_blank'
+					rel='noreferrer'
+					underline='none'
+					sx={{
+						display: 'flex',
+						gap: '5px',
+						alignItems: 'center',
+					}}
+				>
 					<SVG component={GlobeIcon} color='#B4BDBE' size='2rem' />
+					<Typography
+						sx={{
+							color: 'white',
+							fontSize: '1.3rem',
+							fontWeight: '600',
+						}}
+					>
+						APP
+					</Typography>
 				</Link>
-				<Link href={github} target='_blank' rel='noreferrer'>
+				<Link
+					href={github}
+					target='_blank'
+					rel='noreferrer'
+					underline='none'
+					sx={{
+						display: 'flex',
+						gap: '5px',
+						alignItems: 'center',
+					}}
+				>
 					<SVG component={GithubIcon} color='#100D2E' size='2rem' />
+					<Typography
+						sx={{
+							color: 'white',
+							fontSize: '1.3rem',
+							fontWeight: '600',
+						}}
+					>
+						REPO
+					</Typography>
 				</Link>
 			</CardActions>
 		</Card>

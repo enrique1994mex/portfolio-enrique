@@ -37,7 +37,7 @@ const animation = (
 		>
 			<Stack>
 				<Paper sx={{ padding: '1rem', textAlign: 'center' }}>
-					<Typography variant='h6'>
+					<Typography variant='h5'>
 						Me gusta aprender cosas nuevas y que sean al mismo tiempo
 						desafiantes. Empecé en el mundo de la programación de forma
 						autodidacta, he adquirido experiencia profesional y continúo

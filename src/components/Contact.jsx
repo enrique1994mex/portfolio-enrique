@@ -33,10 +33,19 @@ const Contact = (props, ref) => {
 						href='https://www.linkedin.com/in/enrique-sanchez-sandoval/'
 						target='_blank'
 						rel='noreferrer'
+						underline='none'
 					>
 						<SVG component={LinkedinIcon} color='#5175EF' size='3rem' />
+						<Typography
+							sx={{
+								color: '#5175EF',
+								fontSize: '1.7rem',
+								fontWeight: '600',
+							}}
+						>
+							LinkedIn
+						</Typography>
 					</Link>
-					<Typography variant='h5'>LinkedIn</Typography>
 				</Paper>
 			</Stack>
 		</Box>

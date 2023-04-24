@@ -4,7 +4,6 @@ import {
 	Box,
 	Toolbar,
 	IconButton,
-	Typography,
 	Menu,
 	Container,
 	Link,
@@ -65,7 +64,7 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 							onClick={handleOpenNavMenu}
 							color='inherit'
 						>
-							<MenuIcon />
+							<MenuIcon sx={{ fontSize: '2.5rem' }} />
 						</IconButton>
 						<Menu
 							id='menu-appbar'
@@ -87,7 +86,18 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 						>
 							{pages.map((page) => (
 								<MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
-									<Typography textAlign='center'>{page}</Typography>
+									<Link
+										href='#'
+										underline='none'
+										sx={{
+											color: '#D06432',
+											display: 'block',
+											fontSize: '1.3rem',
+											fontWeight: '600',
+										}}
+									>
+										{page}
+									</Link>
 								</MenuItem>
 							))}
 						</Menu>
@@ -119,7 +129,8 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 									mx: 3,
 									color: 'white',
 									display: 'block',
-									fontSize: '1.5rem',
+									fontSize: '1.8rem',
+									fontWeight: '600',
 								}}
 							>
 								{page}
