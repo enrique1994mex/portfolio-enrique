@@ -4,6 +4,7 @@ import Project from './Project'
 import ImageShop from '../assets/shop_react-min.png'
 import ImageGithub from '../assets/Image_Search_Github.png'
 import ImageTasks from '../assets/Image_Tasks.png'
+import ImageBlog from '../assets/Image_Blog.jpg'
 
 const projects = [
 	{
@@ -36,6 +37,17 @@ const projects = [
 		url: 'https://enrique1994mex.github.io/tasks/',
 		github: 'https://github.com/enrique1994mex/tasks/',
 		image: ImageTasks,
+	},
+	{
+		key: '4',
+		title: 'Blog App',
+		description: `Esta es una aplicación web de tipo Blog, en que los 
+		clientes pueden registrarse y visualizar la información del Blog.
+		El administrador puede crear, editar y eliminar entradas del blog.
+		Además, puede crear, editar y eliminar usuarios.
+		La aplicación está construida con ASP.NET Core MVC y SQL Server.`,
+		url: 'https://blogcoreazure-cdhzbfe2dsdjetes.mexicocentral-01.azurewebsites.net/',
+		image: ImageBlog,
 	},
 ]
 const Projects = (props, ref) => {

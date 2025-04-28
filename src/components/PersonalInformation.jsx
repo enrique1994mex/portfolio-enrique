@@ -22,7 +22,7 @@ const animation = (
 					Enrique Sanchez Sandoval
 				</Typography>
 				<Typography variant='h4' sx={{ color: '#D06432' }}>
-					Frontend Developer
+					Fullstack Developer
 				</Typography>
 			</Stack>
 		</Grid>
