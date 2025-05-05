@@ -38,10 +38,12 @@ const animation = (
 			<Stack>
 				<Paper sx={{ padding: '1rem', textAlign: 'center' }}>
 					<Typography variant='h5'>
-						Me gusta aprender cosas nuevas y que sean al mismo tiempo
-						desafiantes. Empecé en el mundo de la programación de forma
-						autodidacta, he adquirido experiencia profesional y continúo
-						aprendiendo en plataformas como Platzi y Udemy.
+						Soy desarrollador fullstack. Actualmente curso el último año de la carrera de Ingeniería 
+						en Desarrollo de Software, lo que refuerza mi perfil  técnico y compromiso con la 
+						mejora continua. Inicié mi formación de manera autodidacta y he trabajado en 
+						proyectos completos, desde la creación de interfaces intuitivas hasta 
+						la implementación de bases de datos y APIs. Tengo experiencia profesional y me mantengo 
+						en constante actualización a través de plataformas como Platzi y Udemy.
 					</Typography>
 				</Paper>
 			</Stack>

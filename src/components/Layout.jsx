@@ -1,10 +1,11 @@
 import { Container } from '@mui/material'
 import Header from './Header'
 
-const Layout = ({ children, handleScrollProjects, handleScrollContact }) => {
+const Layout = ({ children, handleScrollProjects, handleScrollContact, handleScrollServices }) => {
 	return (
-		<Container>
+		<Container maxWidth='xl'>
 			<Header
+				handleScrollServices={handleScrollServices}
 				handleScrollProjects={handleScrollProjects}
 				handleScrollContact={handleScrollContact}
 			/>

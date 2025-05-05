@@ -8,14 +8,13 @@ import {
 	Container,
 	Link,
 	MenuItem,
+	Typography,
 } from '@mui/material'
-import SvgIcon from '@mui/material/SvgIcon'
 import MenuIcon from '@mui/icons-material/Menu'
-import { ReactComponent as WebIcon } from '../assets/code-solid.svg'
 
-const pages = ['Contacto', 'Proyectos']
+const pages = ['Contacto', 'Proyectos', 'Servicios']
 
-const Header = ({ handleScrollProjects, handleScrollContact }) => {
+const Header = ({ handleScrollProjects, handleScrollContact, handleScrollServices }) => {
 	const [anchorElNav, setAnchorElNav] = useState(null)
 
 	const handleOpenNavMenu = (event) => {
@@ -28,9 +27,14 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 			setTimeout(() => {
 				handleScrollContact()
 			}, 500)
-		} else {
+		} else if (page === 'Proyectos') {
 			setTimeout(() => {
 				handleScrollProjects()
+			}, 500)
+		}
+		else if (page === 'Servicios') {
+			setTimeout(() => {
+				handleScrollServices()
 			}, 500)
 		}
 	}
@@ -46,15 +50,28 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 		>
 			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
-					<SvgIcon
-						component={WebIcon}
+					<Link
+						href='mailto:enrique.antonio1029@gmail.com'
+						target='_blank'
+						rel='noreferrer'
+						underline='none'
 						inheritViewBox
 						sx={{
 							display: { xs: 'none', md: 'flex' },
 							mr: 1,
 							fontSize: '3rem',
 						}}
-					/>
+					>
+						<Typography
+							sx={{
+								color: 'white',
+								fontSize: '1.5rem',
+								fontWeight: '600',
+							}}
+						>
+							enrique.antonio1029@gmail.com
+						</Typography>
+					</Link>
 					<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 						<IconButton
 							size='large'
@@ -102,15 +119,28 @@ const Header = ({ handleScrollProjects, handleScrollContact }) => {
 							))}
 						</Menu>
 					</Box>
-					<SvgIcon
-						component={WebIcon}
+					<Link
+						href='mailto:enrique.antonio1029@gmail.com'
+						target='_blank'
+						rel='noreferrer'
+						underline='none'
 						inheritViewBox
 						sx={{
 							display: { xs: 'flex', md: 'none' },
 							mr: 1,
 							fontSize: '3rem',
 						}}
-					/>
+					>
+						<Typography
+							sx={{
+								color: 'white',
+								fontSize: '1rem',
+								fontWeight: '600',
+							}}
+						>
+							enrique.antonio1029@gmail.com
+						</Typography>
+					</Link>
 					<Box
 						sx={{
 							flexGrow: 1,
