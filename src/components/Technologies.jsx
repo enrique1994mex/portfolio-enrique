@@ -1,29 +1,31 @@
 import { forwardRef } from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import { ReactComponent as JSIcon } from '../assets/js.svg'
+import { ReactComponent as TSIcon } from '../assets/typescript.svg'
 import { ReactComponent as CSSIcon } from '../assets/css3.svg'
 import { ReactComponent as HTMLIcon } from '../assets/html5.svg'
 import { ReactComponent as ReactIcon } from '../assets/react.svg'
-import { ReactComponent as BootstrapIcon } from '../assets/bootstrap.svg'
+import { ReactComponent as AWSIcon } from '../assets/aws.svg'
+import { ReactComponent as DockerIcon } from '../assets/docker.svg'
+// import { ReactComponent as BootstrapIcon } from '../assets/bootstrap.svg'
 import { ReactComponent as GitIcon } from '../assets/git-alt.svg'
-import { ReactComponent as CSharpIcon } from '../assets/c-sharp.svg'
+// import { ReactComponent as CSharpIcon } from '../assets/c-sharp.svg'
 import { ReactComponent as SQLIcon } from '../assets/sql.svg'
-import { ReactComponent as AngularIcon } from '../assets/angular.svg'
+// import { ReactComponent as AngularIcon } from '../assets/angular.svg'
 import { ReactComponent as NodeIcon } from '../assets/nodejs.svg'
-import { ReactComponent as NetIcon } from '../assets/dot_net.svg'
+// import { ReactComponent as NetIcon } from '../assets/dot_net.svg'
 import SVG from './SVG'
 
 const Icons = [
 	{ name: 'JavaScript', component: JSIcon, color: '#E9F619' },
-	{ name: 'CSS', component: CSSIcon, color: '#1981F6' },
-	{ name: 'HTML', component: HTMLIcon, color: '#F05637' },
-	{ name: 'Bootstrap', component: BootstrapIcon, color: '#A045F1' },
+	{ name: 'TypeScript', component: TSIcon, color: '#3178C6' },
+	{ name: 'CSS3', component: CSSIcon, color: '#1981F6' },
+	{ name: 'HTML5', component: HTMLIcon, color: '#F05637' },
 	{ name: 'React', component: ReactIcon, color: '#1981F6' },
-	{ name: 'Angular', component: AngularIcon, color: '#DD0031' },
 	{ name: 'Node.js', component: NodeIcon, color: '#8CC84B' },
-	{ name: 'C#', component: CSharpIcon, color: '#684D95' },
+	{ name: 'AWS', component: AWSIcon, color: '#FF9900' },
+	{ name: 'Docker', component: DockerIcon, color: '#2496ED' },
 	{ name: 'SQL Server', component: SQLIcon, color: '#0078D4' },
-	{ name: '.NET', component: NetIcon, color: '#5C2D91' },
 	{ name: 'Git', component: GitIcon, color: '#F94C2A' },
 ]
 

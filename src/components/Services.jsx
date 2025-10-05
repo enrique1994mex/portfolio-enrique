@@ -8,7 +8,7 @@ const Services = (props, ref) => {
 				variant='h3'
 				sx={{ margin: '40px 0px', textAlign: 'center', color: '#D06432' }}
 			>
-				Servicios
+				Tecnologías y herramientas
 			</Typography>
 			<List
 				sx={{
@@ -22,32 +22,32 @@ const Services = (props, ref) => {
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Desarrollo de aplicaciones web (frontend y backend).
+					Desarrollo de interfaces modernas con React y TypeScript.
 				</ListItem>
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Construcción de APIs RESTful con .NET o Node.js.
+					Implementación de arquitecturas escalables y mantenibles (Clean Architecture).
 				</ListItem>
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Integración de bases de datos relacionales (SQL Server, MySQL).
+					Integración con APIs RESTful usando Node.js.
 				</ListItem>
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Mantenimiento y mejora de sistemas existentes.
+					Conexión e interacción con bases de datos relacionales (SQL Server, MySQL).
 				</ListItem>
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Despliegue en servidores o servicios cloud (Azure, Heroku).
+					Optimización y mantenimiento de aplicaciones existentes.
 				</ListItem>
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Automatización de procesos administrativos.
+					Despliegue y gestión en entornos cloud (AWS, Vercel, Azure).
 				</ListItem>
 			</List>
 		</Stack>

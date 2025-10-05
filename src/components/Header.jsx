@@ -12,7 +12,7 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 
-const pages = ['Contacto', 'Proyectos', 'Servicios']
+const pages = ['Contacto', 'Proyectos', 'Stack tecnológico']
 
 const Header = ({ handleScrollProjects, handleScrollContact, handleScrollServices }) => {
 	const [anchorElNav, setAnchorElNav] = useState(null)
@@ -32,7 +32,7 @@ const Header = ({ handleScrollProjects, handleScrollContact, handleScrollService
 				handleScrollProjects()
 			}, 500)
 		}
-		else if (page === 'Servicios') {
+		else if (page === 'Stack tecnológico') {
 			setTimeout(() => {
 				handleScrollServices()
 			}, 500)
