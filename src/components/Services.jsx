@@ -1,8 +1,8 @@
 import { forwardRef } from 'react'
-import { Stack, List, ListItem, Typography} from '@mui/material'
+import { Stack, List, ListItem, Typography } from '@mui/material'
 
 const Services = (props, ref) => {
-  return (
+	return (
 		<Stack ref={ref} pacing={2}>
 			<Typography
 				variant='h3'
@@ -27,7 +27,8 @@ const Services = (props, ref) => {
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Implementación de arquitecturas escalables y mantenibles (Clean Architecture).
+					Implementación de arquitecturas escalables y mantenibles (Clean
+					Architecture).
 				</ListItem>
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
@@ -37,17 +38,12 @@ const Services = (props, ref) => {
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Conexión e interacción con bases de datos relacionales (SQL Server, MySQL).
-				</ListItem>
-				<ListItem
-					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
-				>
 					Optimización y mantenimiento de aplicaciones existentes.
 				</ListItem>
 				<ListItem
 					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
 				>
-					Despliegue y gestión en entornos cloud (AWS, Vercel, Azure).
+					Despliegue y gestión en entornos cloud.
 				</ListItem>
 			</List>
 		</Stack>

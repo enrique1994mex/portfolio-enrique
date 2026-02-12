@@ -10,7 +10,7 @@ import { ReactComponent as DockerIcon } from '../assets/docker.svg'
 // import { ReactComponent as BootstrapIcon } from '../assets/bootstrap.svg'
 import { ReactComponent as GitIcon } from '../assets/git-alt.svg'
 // import { ReactComponent as CSharpIcon } from '../assets/c-sharp.svg'
-import { ReactComponent as SQLIcon } from '../assets/sql.svg'
+// import { ReactComponent as SQLIcon } from '../assets/sql.svg'
 // import { ReactComponent as AngularIcon } from '../assets/angular.svg'
 import { ReactComponent as NodeIcon } from '../assets/nodejs.svg'
 // import { ReactComponent as NetIcon } from '../assets/dot_net.svg'
@@ -25,7 +25,6 @@ const Icons = [
 	{ name: 'Node.js', component: NodeIcon, color: '#8CC84B' },
 	{ name: 'AWS', component: AWSIcon, color: '#FF9900' },
 	{ name: 'Docker', component: DockerIcon, color: '#2496ED' },
-	{ name: 'SQL Server', component: SQLIcon, color: '#0078D4' },
 	{ name: 'Git', component: GitIcon, color: '#F94C2A' },
 ]
 

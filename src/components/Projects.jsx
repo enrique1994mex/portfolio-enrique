@@ -1,37 +1,26 @@
 import { forwardRef } from 'react'
 import { Stack } from '@mui/material'
 import Project from './Project'
-import ImageShop from '../assets/shop_react-min.png'
 import ImageGithub from '../assets/Image_Search_Github.png'
-import ImageBlog from '../assets/Image_Blog.jpg'
+import ImageBooking from '../assets/Image_booking_system.jpg'
 
 const projects = [
 	{
 		key: '1',
-		title: 'Blog App',
-		description: `Aplicación web desarrollada con ASP.NET Core MVC y SQL Server, 
-		ideal para empresas o creadores de contenido que desean administrar su propio blog. 
-		Permite a los usuarios registrarse y visualizar publicaciones, mientras que los 
-		administradores pueden gestionar entradas y usuarios desde un panel seguro. 
-		Este proyecto muestra mi capacidad para desarrollar soluciones web completas 
-		con panel de administración, autenticación de usuarios y base de datos relacional.`,
-		url: 'https://blogcoreazure-cdhzbfe2dsdjetes.mexicocentral-01.azurewebsites.net/',
-		image: ImageBlog,
+		title: 'Booking Platform Project',
+		description: `Sistema web de reservas desarrollado con Next.js, TypeScript, Supabase y Stripe, 
+		diseñado para gestionar búsquedas de alojamientos, disponibilidad de habitaciones y procesamiento 
+		de pagos. La aplicación implementa un flujo completo de reservas, integración con Stripe Checkout 
+		y manejo de webhooks para asegurar consistencia transaccional entre el estado del pago y la 
+		confirmación de la reserva. Incluye control de disponibilidad, validación de reglas de negocio y 
+		preparación para integración con pagos reales. El proyecto está en modo demo, pero cuenta con 
+		arquitectura preparada para producción.`,
+		url: 'https://booking-system-production-3de7.up.railway.app/',
+		github: 'https://github.com/enrique1994mex/booking-system/',
+		image: ImageBooking,
 	},
 	{
 		key: '2',
-		title: 'Shop App',
-		description: `Aplicación web construida con React, Webpack y Sass, ideal para negocios 
-		que buscan vender productos en línea. Permite a los usuarios navegar por un catálogo 
-		de productos, agregar artículos al carrito y revisar su orden antes de finalizar la compra. 
-		Este proyecto demuestra mi experiencia creando interfaces dinámicas y funcionales orientadas 
-		a la conversión de clientes.`,
-		url: 'https://enrique1994mex.github.io/react-shop/',
-		github: 'https://github.com/enrique1994mex/react-shop/',
-		image: ImageShop,
-	},
-	{
-		key: '3',
 		title: 'Search GitHub',
 		description: `Aplicación web desarrollada con React, Webpack y Material UI que permite 
 		consultar información de perfiles de GitHub como número de repositorios, seguidores y seguidos. 

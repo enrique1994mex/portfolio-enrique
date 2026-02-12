@@ -39,9 +39,10 @@ const animation = (
 			<Stack>
 				<Paper sx={{ padding: '1rem', textAlign: 'center' }}>
 					<Typography variant='h5' sx={{ color: '#1E1E1E' }}>
-						Desarrollador fullstack con enfoque en frontend. Estudio Ingeniería en Desarrollo de Software y 
-						he trabajado en proyectos integrales con React, Node.js y SQL. Me mantengo en constante actualización 
-						mediante plataformas como Platzi y Udemy.
+						Desarrollador fullstack con enfoque en frontend. Estudio Ingeniería
+						en Desarrollo de Software y he trabajado en proyectos integrales con
+						React y Node.js. Me mantengo en constante actualización mediante
+						plataformas como Platzi y Udemy.
 					</Typography>
 				</Paper>
 			</Stack>
@@ -53,7 +54,7 @@ const PersonalInformation = () => {
 	return (
 		<Box
 			sx={{
-				position: 'relative', 
+				position: 'relative',
 				width: '100%',
 				minHeight: '640px',
 				borderRadius: '16px',
@@ -61,7 +62,7 @@ const PersonalInformation = () => {
 				display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center',
-				overflow: 'hidden', 
+				overflow: 'hidden',
 			}}
 		>
 			<Box
@@ -72,25 +73,25 @@ const PersonalInformation = () => {
 					opacity: 0.5,
 				}}
 			>
-				<Lottie 
-					animationData={devAnimation} 
-					loop 
-					autoplay 
+				<Lottie
+					animationData={devAnimation}
+					loop
+					autoplay
 					style={{
 						width: '100%',
 						height: '100%',
-						objectFit: 'cover', 
+						objectFit: 'cover',
 					}}
 				/>
 			</Box>
-			
+
 			<Box sx={{ position: 'relative', zIndex: 2 }}>
 				<Slide
-					direction="up"
+					direction='up'
 					in
 					mountOnEnter
 					unmountOnExit
-					easing="ease-in"
+					easing='ease-in'
 					timeout={1100}
 				>
 					{animation}
