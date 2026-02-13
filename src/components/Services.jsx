@@ -1,14 +1,17 @@
 import { forwardRef } from 'react'
 import { Stack, List, ListItem, Typography } from '@mui/material'
+import { useTranslation } from '../i18n/LanguageContext'
 
 const Services = (props, ref) => {
+	const { t } = useTranslation()
+
 	return (
 		<Stack ref={ref} pacing={2}>
 			<Typography
 				variant='h3'
 				sx={{ margin: '40px 0px', textAlign: 'center', color: '#D06432' }}
 			>
-				Tecnologías y herramientas
+				{t('services.heading')}
 			</Typography>
 			<List
 				sx={{
@@ -19,32 +22,14 @@ const Services = (props, ref) => {
 					pl: 2,
 				}}
 			>
-				<ListItem
-					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
-				>
-					Desarrollo de interfaces modernas con React y TypeScript.
-				</ListItem>
-				<ListItem
-					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
-				>
-					Implementación de arquitecturas escalables y mantenibles (Clean
-					Architecture).
-				</ListItem>
-				<ListItem
-					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
-				>
-					Integración con APIs RESTful usando Node.js.
-				</ListItem>
-				<ListItem
-					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
-				>
-					Optimización y mantenimiento de aplicaciones existentes.
-				</ListItem>
-				<ListItem
-					sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
-				>
-					Despliegue y gestión en entornos cloud.
-				</ListItem>
+				{t('services.items').map((item, index) => (
+					<ListItem
+						key={index}
+						sx={{ display: 'list-item', '&::marker': { color: '#D06432' } }}
+					>
+						{item}
+					</ListItem>
+				))}
 			</List>
 		</Stack>
 	)

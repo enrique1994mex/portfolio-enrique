@@ -11,11 +11,26 @@ import {
 	Typography,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
+import LanguageToggle from './LanguageToggle'
+import { useTranslation } from '../i18n/LanguageContext'
 
-const pages = ['Contacto', 'Proyectos', 'Stack tecnológico']
-
-const Header = ({ handleScrollProjects, handleScrollContact, handleScrollServices }) => {
+const Header = ({
+	handleScrollProjects,
+	handleScrollContact,
+	handleScrollServices,
+}) => {
 	const [anchorElNav, setAnchorElNav] = useState(null)
+	const { t } = useTranslation()
+
+	const pages = [
+		{ key: 'contact', label: t('nav.contact'), action: handleScrollContact },
+		{ key: 'projects', label: t('nav.projects'), action: handleScrollProjects },
+		{
+			key: 'techStack',
+			label: t('nav.techStack'),
+			action: handleScrollServices,
+		},
+	]
 
 	const handleOpenNavMenu = (event) => {
 		setAnchorElNav(event.currentTarget)
@@ -23,18 +38,9 @@ const Header = ({ handleScrollProjects, handleScrollContact, handleScrollService
 
 	const handleCloseNavMenu = (page) => {
 		setAnchorElNav(null)
-		if (page === 'Contacto') {
+		if (page?.action) {
 			setTimeout(() => {
-				handleScrollContact()
-			}, 500)
-		} else if (page === 'Proyectos') {
-			setTimeout(() => {
-				handleScrollProjects()
-			}, 500)
-		}
-		else if (page === 'Stack tecnológico') {
-			setTimeout(() => {
-				handleScrollServices()
+				page.action()
 			}, 500)
 		}
 	}
@@ -96,13 +102,16 @@ const Header = ({ handleScrollProjects, handleScrollContact, handleScrollService
 								horizontal: 'left',
 							}}
 							open={Boolean(anchorElNav)}
-							onClose={handleCloseNavMenu}
+							onClose={() => handleCloseNavMenu()}
 							sx={{
 								display: { xs: 'block', md: 'none' },
 							}}
 						>
 							{pages.map((page) => (
-								<MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
+								<MenuItem
+									key={page.key}
+									onClick={() => handleCloseNavMenu(page)}
+								>
 									<Link
 										href='#'
 										underline='none'
@@ -113,7 +122,7 @@ const Header = ({ handleScrollProjects, handleScrollContact, handleScrollService
 											fontWeight: '600',
 										}}
 									>
-										{page}
+										{page.label}
 									</Link>
 								</MenuItem>
 							))}
@@ -152,7 +161,7 @@ const Header = ({ handleScrollProjects, handleScrollContact, handleScrollService
 							<Link
 								href='#'
 								underline='none'
-								key={page}
+								key={page.key}
 								onClick={() => handleCloseNavMenu(page)}
 								sx={{
 									my: 2,
@@ -163,16 +172,12 @@ const Header = ({ handleScrollProjects, handleScrollContact, handleScrollService
 									fontWeight: '600',
 								}}
 							>
-								{page}
+								{page.label}
 							</Link>
 						))}
 					</Box>
 
-					{/* <Box sx={{ flexGrow: 0 }}>
-						<Tooltip title='Open settings'>
-							<Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
-						</Tooltip>
-					</Box> */}
+					<LanguageToggle />
 				</Toolbar>
 			</Container>
 		</AppBar>

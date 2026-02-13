@@ -1,0 +1,36 @@
+{
+	"nav": {
+		"contact": "Contact",
+		"projects": "Projects",
+		"techStack": "Tech Stack"
+	},
+	"personal": {
+		"name": "Enrique Sanchez Sandoval",
+		"title": "Fullstack Developer",
+		"bio": "Fullstack developer focused on frontend. I study Software Development Engineering and have worked on end-to-end projects with React and Node.js. I stay constantly up to date through platforms like Platzi and Udemy."
+	},
+	"services": {
+		"heading": "Technologies & Tools",
+		"items": [
+			"Modern interface development with React and TypeScript.",
+			"Implementation of scalable and maintainable architectures (Clean Architecture).",
+			"RESTful API integration using Node.js.",
+			"Optimization and maintenance of existing applications.",
+			"Deployment and management in cloud environments."
+		]
+	},
+	"projects": {
+		"booking": {
+			"title": "Booking Platform Project",
+			"description": "A web-based reservation system built with Next.js, TypeScript, Supabase, and Stripe, designed to manage accommodation searches, room availability, and payment processing. The application implements a complete booking flow, Stripe Checkout integration, and webhook handling to ensure transactional consistency between payment status and booking confirmation. It includes availability control, business rule validation, and preparation for real payment integration. The project is in demo mode but features a production-ready architecture."
+		},
+		"github": {
+			"title": "Search GitHub",
+			"description": "A web application built with React, Webpack, and Material UI that allows querying GitHub profile information such as number of repositories, followers, and following. Ideal as an analysis or reference tool for development teams or technical recruitment. This project showcases my ability to consume public APIs and present data in a clear and visually appealing way."
+		}
+	},
+	"contact": {
+		"heading": "Contact Me"
+	},
+	"pageTitle": "Enrique's Portfolio"
+}

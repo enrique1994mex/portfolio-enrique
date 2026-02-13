@@ -3,8 +3,11 @@ import { Box, Link, Stack, Paper, Typography } from '@mui/material'
 import SVG from './SVG'
 import { ReactComponent as LinkedinIcon } from '../assets/linkedin.svg'
 import { ReactComponent as EmailIcon } from '../assets/email.svg'
+import { useTranslation } from '../i18n/LanguageContext'
 
 const Contact = (props, ref) => {
+	const { t } = useTranslation()
+
 	return (
 		<Box
 			ref={ref}
@@ -18,7 +21,9 @@ const Contact = (props, ref) => {
 				flexWrap: 'wrap',
 			}}
 		>
-			<Typography variant='h4' sx={{ marginBottom: '20px' }}>Contactáme</Typography>
+			<Typography variant='h4' sx={{ marginBottom: '20px' }}>
+				{t('contact.heading')}
+			</Typography>
 			<Stack display='flex' direction='row' spacing={4}>
 				<Paper
 					elevation={8}
